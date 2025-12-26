@@ -1,0 +1,177 @@
+/* --------------------
+   GLOBAL STYLES
+-------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+.header {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    gap: 2rem
+}
+
+.icons a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* --------------------
+   MAIN CONTAINER
+-------------------- */
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* --------------------
+   CARD DESIGN
+-------------------- */
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #1e88e5;
+}
+
+/* --------------------
+   FORM STYLES
+-------------------- */
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1e88e5;
+}
+
+/* --------------------
+   BUTTON
+-------------------- */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+/* --------------------
+   TOKEN DETAILS
+-------------------- */
+
+#tokenSection p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* --------------------
+   NOTIFICATIONS
+-------------------- */
+
+.notification {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+/* Notification types */
+.notification.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    display: block;
+}
+
+.notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+/* --------------------
+   UTILITY CLASSES
+-------------------- */
+
+.hidden {
+    display: none;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    padding: 15px;
+}

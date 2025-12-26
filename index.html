@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Queue Manager – Patient</title>
+
+    <!-- Link to common CSS -->
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>🏥 Digital Queue Manager</h1>
+            <p>Campus Medical Unit</p>
+        </div>
+
+        <div class="icons">
+            <a href="index.html">Patient Page</a>
+            <a href="admin.html">Admin Page</a>
+        </div>
+
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Patient Registration Card -->
+        <section class="card">
+            <h2>Get Your Token</h2>
+
+            <form id="patientForm">
+                <label>
+                    Name *
+                    <input type="text" id="name" required>
+                </label>
+
+                <label>
+                    Age
+                    <input type="number" id="age" min="0">
+                </label>
+
+                <label>
+                    Reason for Visit
+                    <input type="text" id="reason" placeholder="Optional">
+                </label>
+
+                <button type="submit">Generate Token</button>
+            </form>
+        </section>
+
+        <!-- Token Details -->
+        <section class="card hidden" id="tokenSection">
+            <h2>Your Token Details</h2>
+
+            <p><strong>Your Token:</strong> <span id="yourToken">-</span></p>
+            <p><strong>Now Serving:</strong> <span id="currentToken">-</span></p>
+            <p><strong>Patients Ahead:</strong> <span id="position">-</span></p>
+            <p><strong>Estimated Wait:</strong> <span id="waitTime">-</span> minutes</p>
+
+            <!-- Notification Area -->
+            <div class="notification" id="notificationBox"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed for accessibility & reduced waiting</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

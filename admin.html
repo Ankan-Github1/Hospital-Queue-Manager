@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Queue Manager – Admin</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>🧑‍⚕️ Admin Dashboard</h1>
+            <p>Clinic Queue Control Panel</p>
+        </div>
+
+        <div class="icons">
+            <a href="index.html">Patient Page</a>
+            <a href="admin.html">Admin Page</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Current Status -->
+        <section class="card">
+            <h2>Current Status</h2>
+
+            <p><strong>Now Serving:</strong> <span id="adminCurrentToken">-</span></p>
+            <p><strong>Queue Length:</strong> <span id="queueLength">0</span></p>
+        </section>
+
+        <!-- Admin Controls -->
+        <section class="card">
+            <h2>Queue Controls</h2>
+
+            <button id="nextBtn">Call Next Patient</button>
+            <button id="pauseBtn">Pause Queue</button>
+        </section>
+
+        <!-- Queue List -->
+        <section class="card">
+            <h2>Waiting Queue</h2>
+
+            <ul id="queueList">
+                <!-- Queue items will be added by JavaScript -->
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Admin access – Authorized staff only</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

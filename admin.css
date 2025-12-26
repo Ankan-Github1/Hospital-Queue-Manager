@@ -1,0 +1,144 @@
+/* --------------------
+   GLOBAL RESET
+-------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+.header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 26px;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.icons a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* --------------------
+   MAIN CONTAINER
+-------------------- */
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* --------------------
+   CARD LAYOUT
+-------------------- */
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #263238;
+}
+
+/* --------------------
+   STATUS TEXT
+-------------------- */
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* --------------------
+   BUTTONS
+-------------------- */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nextBtn {
+    background-color: #24b62b;
+    color: white;
+}
+
+#nextBtn:hover {
+    background-color: #146919;
+}
+
+#pauseBtn {
+    background-color: #f9a825;
+    color: #333;
+}
+
+#pauseBtn:hover {
+    background-color: #f57f17;
+}
+
+/* --------------------
+   QUEUE LIST
+-------------------- */
+
+#queueList {
+    list-style: none;
+}
+
+#queueList li {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 5px solid #1976d2;
+    background-color: #f1f8ff;
+    font-size: 14px;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    padding: 15px;
+}
